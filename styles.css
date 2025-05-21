@@ -1,0 +1,143 @@
+/*  Font Styling */
+body {
+  font-family: "Amarante", "Faculty Glyphic", serif;
+  background: url("https://snipboard.io/15zcQB.jpg") no-repeat fixed center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  margin: 2%;
+  padding: 5em;
+  color: #551B0C;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Navigation Sidebar */
+#navbar {
+  background-color: #9CBEC3;
+  border-radius: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+}
+
+#img_an {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+}
+
+.nav-link {
+  font-family: "Amarante", serif;
+  font-size: 2em;
+  color: #F8F7EE;
+  padding: 1em;
+  border-bottom: 0.5px dotted pink;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #ff4655;
+  background-color: rgba(105, 105, 105, 0.1);
+}
+
+/* Main Content Area */
+#main {
+  margin-left: 15vw;
+  padding: 2em;
+}
+
+header {
+  font-family: "Amarante", sans-serif;
+  color: #9CBEC3;
+}
+
+.image-content {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#img_summer {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.main-section {
+  margin-bottom: 2em;
+}
+
+.main-section > header {
+  font-family: 'Amarante', sans-serif;
+  font-size: 2em;
+  color: #9CBEC3;
+  margin-bottom: 0.5em;
+}
+
+/* Typography */
+p, ul {
+  font-family: "Faculty Glyphic", serif;
+  font-size: 1.2em;
+  color: #551B0C;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Code Block Styling */
+code {
+  display: block;
+  font-family: "Fira Code", monospace;
+  font-size: 1em;
+  color: #699d54;
+  background-color: #f9f9f9;
+  border: 1px solid #d9d9d9;
+  margin-top: 1.5em;
+  padding: 1.5em;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5em;
+  }
+
+  .nav-link {
+    border-bottom: none;
+    border-right: 2px dotted pink;
+    padding: 0.5em;
+    font-size: 1.5em;
+    width: auto;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 1em;
+  }
+
+  #img_summer {
+    max-width: 100%;
+  }
+}
